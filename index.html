@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo Gatos</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff7ed;
+      color: #2f2f2f;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 24px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 80vh;
+      padding: 80px 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text h2 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f97316;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero-img img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .section {
+      padding: 70px 10%;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card span {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .card h4 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 28px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 50px 6%;
+      }
+
+      .hero-text h2 {
+        font-size: 40px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Solo Gatos</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#gatos">Gatos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <h2>Un mundo hecho para gatos</h2>
+        <p>
+          Bienvenido a Solo Gatos, una landing page de prueba dedicada a los gatos:
+          elegantes, curiosos, independientes y expertos en conquistar cualquier hogar.
+        </p>
+        <a href="#gatos" class="btn">Ver más gatos</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80" alt="Gato mirando a la cámara">
+      </div>
+    </section>
+
+    <section class="section" id="gatos">
+      <h3>¿Por qué amamos a los gatos?</h3>
+
+      <div class="cards">
+        <div class="card">
+          <span>🐱</span>
+          <h4>Son curiosos</h4>
+          <p>Exploran cada rincón como si fuera una nueva aventura.</p>
+        </div>
+
+        <div class="card">
+          <span>😺</span>
+          <h4>Son compañeros</h4>
+          <p>Aunque independientes, siempre encuentran la forma de estar cerca.</p>
+        </div>
+
+        <div class="card">
+          <span>🐾</span>
+          <h4>Son únicos</h4>
+          <p>Cada gato tiene una personalidad distinta y especial.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>© 2026 Solo Gatos. Landing page de prueba.</p>
+  </footer>
+
+</body>
+</html>
